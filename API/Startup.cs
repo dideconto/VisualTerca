@@ -38,7 +38,6 @@ namespace API
                         .AllowAnyHeader());
                 }
             );
-
             //Configurar todas as injeções de dependência do seu projeto
             services.AddDbContext<DataContext>(
                 options => options.UseInMemoryDatabase("database")
