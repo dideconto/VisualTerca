@@ -12,7 +12,8 @@ namespace API.Models
         public string Descricao { get; set; }
         public int Quantidade { get; set; }
         public DateTime CriadoEm { get; set; }
-        public int IdCategoria { get; set; }
+        public Categoria Categoria { get; set; }
+        public int CategoriaId { get; set; }
 
         public override string ToString() =>
             $"Nome: {Nome} | Preço: {Preco.ToString("C2")} | Criado em: {CriadoEm}";
